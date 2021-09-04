@@ -1,12 +1,15 @@
-package instruments;
+package shopItems.instruments;
 
-public abstract class Instrument implements IPlay {
+import shopItems.ShopItem;
+
+public abstract class Instrument extends ShopItem implements IPlay {
 
     private String material;
     private String colour;
     private InstrumentType instrumentType;
 
-    public Instrument(String material, String colour, InstrumentType instrumentType) {
+    public Instrument(String type, double boughtPrice, double salePrice, String material, String colour, InstrumentType instrumentType) {
+        super(type, boughtPrice, salePrice);
         this.material = material;
         this.colour = colour;
         this.instrumentType = instrumentType;

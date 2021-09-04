@@ -1,4 +1,4 @@
-package instruments;
+package shopItems.instruments;
 
 public interface IPlay {
     String play();

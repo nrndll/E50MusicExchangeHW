@@ -1,4 +1,4 @@
-package instruments;
+package shopItems.instruments;
 
 public enum InstrumentType {
     BRASS,
